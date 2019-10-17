@@ -1,4 +1,4 @@
-package com.example.roomwordsample;
+package com.example.roomwordsample.ui;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.roomwordsample.R;
+import com.example.roomwordsample.model.Word;
 
 import java.util.List;
 
@@ -41,7 +44,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             holder.wordItemView.setText(current.getWord());
         } else {
             // Covers the case of data not being ready yet.
-            holder.wordItemView.setText("No com.example.roomwordsample.Word");
+            holder.wordItemView.setText("No com.example.roomwordsample.model.Word");
         }
     }
 

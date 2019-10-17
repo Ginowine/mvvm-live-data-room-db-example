@@ -1,4 +1,4 @@
-package com.example.roomwordsample;
+package com.example.roomwordsample.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.roomwordsample.R;
+import com.example.roomwordsample.model.Word;
+import com.example.roomwordsample.viewmodel.WordViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;

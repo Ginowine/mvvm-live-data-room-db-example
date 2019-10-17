@@ -1,9 +1,11 @@
-package com.example.roomwordsample;
+package com.example.roomwordsample.db;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+
+import com.example.roomwordsample.model.Word;
 
 import java.util.List;
 
@@ -13,13 +15,13 @@ public class WordRepository {
     private WordDao mWordDao;
     private LiveData<List<Word>> mAllWords;
 
-    WordRepository(Application application) {
+    public WordRepository(Application application) {
         WordRoomDatabase db = WordRoomDatabase.getDatabase(application);
         mWordDao = db.wordDao();
         mAllWords = mWordDao.getAlphabetizedWords();
     }
 
-    LiveData<List<Word>> getAllWords() {
+     public LiveData<List<Word>> getAllWords() {
         return mAllWords;
     }
 
