@@ -1,3 +1,5 @@
+package com.example.roomwordsample;
+
 import android.app.Application;
 
 import androidx.lifecycle.AndroidViewModel;
